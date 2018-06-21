@@ -52,7 +52,7 @@
 
 - Cài đặt Ubuntu 14.04 trên KVM bằng công cụ mà bạn ưa thích (virt-manager, virt-install...). Cài đặt lên những dịch vụ cần thiết.
 - Shutdown máy ảo bằng câu lệnh `virsh shutdown VMname`
-- Sử dụng `virt-sysprep` để "niêm phong" máy ảo:
+- Sử dụng `virt-sysprep` để "niêm phong" máy ảo (cần cài đặt apt-get install libguestfs-tools trước):
   <ul>
   <li>"virt-sysprep" là một tiện ích nằm trong gói "libguestfs-tools-c" được sử dụng để loại bỏ những thông tin cụ thể của hệ thống đồng thời niêm phong và biến máy ảo trở thành template</li>
   <li>Có 2 options để dùng  "virt-sysprep" đó là "-a" và "-d". Tùy chọn "-d" được sử dụng với tên hoặc UUID của máy ảo, tùy chọn "-a" được sử dụng với đường dẫn tới ổ đĩa máy ảo.</li>
