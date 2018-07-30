@@ -648,7 +648,7 @@ connection = mysql+pymysql://glance:Welcome123@192.168.100.197/glance
 
 [keystone_authtoken]
 auth_uri = http://192.168.100.197:5000
-auth_url = http://192.168.100.197:35357
+auth_url = http://192.168.100.197:5000
 memcached_servers = 192.168.100.197:11211
 auth_type = password
 project_domain_name = Default
