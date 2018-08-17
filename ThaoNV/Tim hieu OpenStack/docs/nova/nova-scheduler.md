@@ -26,7 +26,7 @@ scheduler_available_filters = nova.scheduler.filters.all_filters
 scheduler_default_filters = RetryFilter, AvailabilityZoneFilter, RamFilter, DiskFilter, ComputeFilter, ComputeCapabilitiesFilter, ImagePropertiesFilter, ServerGroupAntiAffinityFilter, ServerGroupAffinityFilter
 ```
 
-Mặc định thì `scheduler_driver` được cấu hình như là `filter scheduler`, scheduler này sẽ xem xét các host có đầy ddue các tiêu chí sau:
+Mặc định thì `scheduler_driver` được cấu hình như là `filter scheduler`, scheduler này sẽ xem xét các host có đầy đủ các tiêu chí sau:
 
 - Chưa từng tham gia vào scheduling (RetryFilter)
 - Nằm trong vùng requested availability zone (requested availability zone)
