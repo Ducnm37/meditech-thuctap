@@ -170,7 +170,11 @@ Chọn máy chủ đang có ít kết nối đến nhất – khuyên du�
 
 **source**
 
-Chọn máy chủ dựa trên 1 hash của source IP, ví dụ IP address của người dùng của bạn. Đây là 1 phương pháp nhằm đảm bảo rằng 1 người dùng sẽ kết nối đến cùng 1 máy chủ.
+Dùng cho các máy chủ chạy SSL, máy chủ phụ thuộc vào địa chỉ nguồn của client , ví dụ IP address của người dùng của bạn. Đây là 1 phương pháp nhằm đảm bảo rằng 1 người dùng sẽ kết nối đến cùng 1 máy chủ.
+
+Ngoài ra còn 1 số giải thuật như **uri**, **hdr**, **first**.
+
+
 
 <a name="5"></a>
 ## 5. Mô hình kết hợp với keepalived
